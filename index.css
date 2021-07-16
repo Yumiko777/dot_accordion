@@ -1,0 +1,19 @@
+/* 矢印を消す */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  cursor: pointer;
+  transition: 0.2s;
+}
+/* ホバー時のスタイル */
+summary:hover {
+  cursor: pointer;
+  background-color: #EFEFEF;
+}
+
+/* オープン時のスタイル */
+details[open] summary {
+  color: skyblue;
+}
